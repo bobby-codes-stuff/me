@@ -48,6 +48,11 @@ class Typerwriter {
     }
 }
 
+function startToHomepage() {
+    const initialWebpage = document.getElementsByClassName("initial-display")[0];
+    initialWebpage.parentNode.removeChild(initial-display);
+}
+
 function displayStartButton() {
     start_btn.style.opacity = 1;
 }
@@ -58,7 +63,6 @@ async function initialViewAnimation(){
 }
 
 const start_btn = document.getElementById('start-btn');
-
 const el1 = new Typerwriter(document.querySelector("[data-typewriter]"), {
     repeat: false,
 });
