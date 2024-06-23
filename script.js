@@ -49,8 +49,11 @@ class Typerwriter {
 }
 
 function startToHomepage() {
-    const initialWebpage = document.getElementsByClassName("initial-display")[0];
-    initialWebpage.parentNode.removeChild(initial-display);
+    // const initialWebpage = document.getElementsByClassName("initial-display")[0];
+    // initialWebpage.parentNode.removeChild(initial-display);
+    var about_section = document.getElementById("about-section");
+    about_section.style.display = "flex";
+    about_section.scrollIntoView()
 }
 
 function displayStartButton() {
@@ -66,5 +69,22 @@ const start_btn = document.getElementById('start-btn');
 const el1 = new Typerwriter(document.querySelector("[data-typewriter]"), {
     repeat: false,
 });
+
+var now = new Date();
+var datetime = now.toLocaleString();
+document.getElementById("current-date").innerHTML=datetime;
+
+// const select=document.querySelector("select")
+// const html=document.querySelector("html")
+
+// function update(bgColor, textColor) {
+//     html.style.backgroundColor=bgColor;
+//     html.style.color=textColor;
+// }
+
+// select.addEventListener("change", () => select.value === "light"
+//     ? update("#EAEAEA", "#08D9D6")
+//     : update("#252A34", "#08D9D6")
+// )
 
 initialViewAnimation();

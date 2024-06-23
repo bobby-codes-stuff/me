@@ -4,17 +4,23 @@
 
 
 body {
-    height: 100vh;
     background: #252A34;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0px;
   }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .initial-display {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -30,6 +36,17 @@ body {
 
 [data-typewriter]:not(.typing) {
     animation: blink-cursor 1s step-end infinite;
+}
+
+#about-section {
+    height: 100vh;
+    display: none;
+    align-items: center;
+    
+    /*UNDER DEV*/
+    color: #EAEAEA;
+    font-family: 'Montserrat';
+    font-weight: 800;
 }
 
 #start-btn {
